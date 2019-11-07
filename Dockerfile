@@ -1,6 +1,6 @@
 FROM maven:3.6.0-ibmjava-8
 
-RUN apt update
+RUN apt update && \
 curl -sSL https://get.docker.com/ | sh && \
 apt install -y curl ssh && \
 curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
